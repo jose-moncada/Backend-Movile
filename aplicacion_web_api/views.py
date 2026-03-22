@@ -14,9 +14,6 @@ class TareaAPIView(APIView):
     authentication_classes = [FirebaseAuthentication]
     permission_classes = [IsAuthenticated]
 
-    # =========================
-    # GET - Traer tareas del usuario
-    # =========================
     def get(self, request, tarea_id=None):
 
         uid_usuario = request.user.uid

@@ -10,5 +10,5 @@ urlpatterns = [
     path('tareas/', TareaAPIView.as_view(), name='api_tareas'),
     path('tareas/<str:tarea_id>/', TareaAPIView.as_view(), name='api_tarea_detalle'),
 
-    path('perfil/foto/', PerfilImagenAPIview.as_view(), name='api_perfil_foto')
+    path('perfil/foto/', PerfilImagenAPIview.as_view(), name='api_perfil_foto'),
 ]
